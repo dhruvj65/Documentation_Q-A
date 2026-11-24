@@ -116,20 +116,6 @@ Main backend settings (all listed in `Backend/.env.example`):
 | `RAG_ENABLED`, `DOCS_PATH`, `DOCS_LANGUAGE`, `EMBEDDING_MODEL` | Docs index settings |
 | `RAG_TOP_K`, `SEMANTIC_MAX_DISTANCE`, `LEXICAL_MIN_RANK`, `RAG_DIVERSITY_SLOTS` | Search tuning (re-run the evaluation after changing the docs) |
 
-## API
-
-| Method | Path | Description |
-|---|---|---|
-| `GET` | `/health` | Health check |
-| `POST` | `/chat/send` | Send a chat message (the reply arrives over SSE) |
-| `GET` | `/events` | Server-Sent Events stream |
-| `GET` | `/conversations` | List conversations |
-| `GET` | `/conversations/{id}/messages` | Get a conversation's messages |
-| `POST` | `/conversations/abandon` | Abandon a pending conversation |
-| `GET` | `/notifications`, `/notifications/history` | Ticket notifications |
-| `POST` | `/notifications/mark-delivered`, `/notifications/mark-all-read` | Update notification status |
-| `POST` | `/jira/webhook` | Jira issue updates |
-
 ## Testing
 
 ```bash
